@@ -1,0 +1,16 @@
+<br>
+<h1>DESAFIO 2</h1>
+<ol>
+  <li>Faça um botão que leve para um sistema de lazy loading</li>
+  <li>Faça um botão que levará para uma página com parâmetro dinâmico informado pelo usuário</li>
+  <li>Faça um botão juntando as funções dos botões anteriores</li>
+</ol>
+
+<button [routerLink]="['button1']">Button 1</button>
+<button [routerLink]="['button2', value]" *ngIf="value">Button 2</button>
+<button [routerLink]="['button3', value]" *ngIf="value">Button 3</button>
+
+<br><br>
+<div class="container">
+  <p>Informe um ID para o parâmetro dinâmico para aparecer o Botão 2 e 3</p><input type="number" [(ngModel)]="value">
+</div>
